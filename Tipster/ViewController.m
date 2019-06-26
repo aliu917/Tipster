@@ -24,7 +24,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setBool: NO forKey: @"started"];
     double useCustom = [defaults boolForKey:@"useCustom"];
     
     if (NO) {
