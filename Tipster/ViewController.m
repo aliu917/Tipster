@@ -13,10 +13,19 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+@property (weak, nonatomic) IBOutlet UILabel *customTipText;
 
 @end
 
 @implementation ViewController
+
+-(void)saveToUserDefaults:(id)tipNum
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setDouble:0.0 forKey:@"custom_tip_percentage"];
+    [defaults synchronize];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +38,7 @@
 }
 
 - (IBAction)onEdit:(id)sender {
+    
     double bill = [self.billField.text doubleValue];
     
     NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
@@ -36,6 +46,13 @@
     
     double tip = tipPercentage * bill;
     double total = bill + tip;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double customTipValue= [defaults doubleForKey:@"default_tip_percentage"];
+    
+    if (customTipValue != 0) {
+        tip = (customTipValue/100.0f);
+    }
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
@@ -64,6 +81,7 @@
     }];
     self.billField.frame = newFrame;
 }
+
 
 
 

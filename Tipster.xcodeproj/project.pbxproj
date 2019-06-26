@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02AFA0F22C2EA8B000CDA04 /* CustomTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C02AFA0E22C2EA8B000CDA04 /* CustomTipViewController.m */; };
 		C0AF15BC22C2C24B006C7E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15BB22C2C24B006C7E1D /* AppDelegate.m */; };
 		C0AF15BF22C2C24B006C7E1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15BE22C2C24B006C7E1D /* ViewController.m */; };
 		C0AF15C222C2C24B006C7E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AF15C022C2C24B006C7E1D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		C0AF15CA22C2C24C006C7E1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15C922C2C24C006C7E1D /* main.m */; };
 		C0AF15D422C2C24C006C7E1D /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15D322C2C24C006C7E1D /* TipsterTests.m */; };
 		C0AF15DF22C2C24C006C7E1D /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15DE22C2C24C006C7E1D /* TipsterUITests.m */; };
+		C0AF15EE22C2E3B4006C7E1D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AF15ED22C2E3B4006C7E1D /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02AFA0D22C2EA8B000CDA04 /* CustomTipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTipViewController.h; sourceTree = "<group>"; };
+		C02AFA0E22C2EA8B000CDA04 /* CustomTipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTipViewController.m; sourceTree = "<group>"; };
 		C0AF15B722C2C24B006C7E1D /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AF15BA22C2C24B006C7E1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0AF15BB22C2C24B006C7E1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		C0AF15DA22C2C24C006C7E1D /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AF15DE22C2C24C006C7E1D /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		C0AF15E022C2C24C006C7E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0AF15EC22C2E3B4006C7E1D /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		C0AF15ED22C2E3B4006C7E1D /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,10 @@
 				C0AF15BD22C2C24B006C7E1D /* ViewController.h */,
 				C0AF15BE22C2C24B006C7E1D /* ViewController.m */,
 				C0AF15C022C2C24B006C7E1D /* Main.storyboard */,
+				C02AFA0D22C2EA8B000CDA04 /* CustomTipViewController.h */,
+				C02AFA0E22C2EA8B000CDA04 /* CustomTipViewController.m */,
+				C0AF15EC22C2E3B4006C7E1D /* SettingsViewController.h */,
+				C0AF15ED22C2E3B4006C7E1D /* SettingsViewController.m */,
 				C0AF15C322C2C24C006C7E1D /* Assets.xcassets */,
 				C0AF15C522C2C24C006C7E1D /* LaunchScreen.storyboard */,
 				C0AF15C822C2C24C006C7E1D /* Info.plist */,
@@ -263,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0AF15BF22C2C24B006C7E1D /* ViewController.m in Sources */,
+				C02AFA0F22C2EA8B000CDA04 /* CustomTipViewController.m in Sources */,
 				C0AF15CA22C2C24C006C7E1D /* main.m in Sources */,
 				C0AF15BC22C2C24B006C7E1D /* AppDelegate.m in Sources */,
+				C0AF15EE22C2E3B4006C7E1D /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
