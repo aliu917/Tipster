@@ -24,6 +24,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     double tip = [self.customTipField.text doubleValue];
     [defaults setDouble: tip forKey:@"custom_tip_percentage"];
+    [defaults setBool: YES forKey: @"useCustom"];
     [defaults synchronize];
 }
 
