@@ -23,6 +23,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool: NO forKey: @"started"];
+    double useCustom = [defaults boolForKey:@"useCustom"];
+    
+    if (NO) {
+        if (useCustom) {
+            NSLog(@"Trying to use custom.");
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", [defaults doubleForKey:@"custom_tip_percentage"]];
+            self.customTipText.text = @"Using custom tip.";
+        }
+    }
 }
 
 - (IBAction)onTap:(id)sender {
@@ -41,9 +53,11 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     double useCustom = [defaults boolForKey:@"useCustom"];
     
-    if (useCustom) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        tipPercentage = [defaults doubleForKey:@"custom_tip_percentage"];
+    if (NO) {
+        if (useCustom) {
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            tipPercentage = [defaults doubleForKey:@"custom_tip_percentage"];
+        }
     }
     
     double tip = tipPercentage * bill;

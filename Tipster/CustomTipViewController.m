@@ -26,6 +26,7 @@
     [defaults setDouble: tip forKey:@"custom_tip_percentage"];
     [defaults setBool: YES forKey: @"useCustom"];
     [defaults synchronize];
+    NSLog(@"Updated user defaults.");
 }
 
 /*

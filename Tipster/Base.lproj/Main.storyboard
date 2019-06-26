@@ -87,7 +87,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Custom"/>
                                 <connections>
-                                    <action selector="customTipPressed:" destination="SsU-R2-tkA" eventType="touchUpInside" id="S9I-BL-61X"/>
                                     <segue destination="ysH-Kk-7KL" kind="show" id="rHs-Ir-2Rk"/>
                                 </connections>
                             </button>
